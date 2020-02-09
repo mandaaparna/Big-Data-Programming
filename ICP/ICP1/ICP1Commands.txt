@@ -1,0 +1,7 @@
+1.hdfs dfs -mkdir /user/bdp
+2.hdfs dfs -copyFromLocal /home/cloudera/Downloads/shakespeare.txt /user/bdp/file1
+3.hdfs dfs -appendToFile /home/cloudera/Downloads/word_list.txt /user/bdp/file1
+4.hdfs dfs -put - /user/bdp/file
+5.hdfs dfs -appendToFile /home/cloudera/Downloads/shakespeare.txt /home/cloudera/Downloads/word_list.txt /user/bdp/file
+6.hdfs dfs -cat /user/bdp/file |head
+7.hdfs dfs -tail /user/bdp/file
